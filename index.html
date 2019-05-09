@@ -59,31 +59,17 @@
       <h3 class="mb-5">
         <em>Global Definitions and its Consequences</em>
       </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+      <!--<a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a> -->
     </div>
     <div class="overlay"></div>
   </header>
 
-  <!-- About -->
-  <section class="content-section bg-light" id="about">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h2>The Urban/Rural divide is used to track demographic changes, economic growth, and resource distribution.</h2>
-          <p class="lead mb-5">Although the UN has tried to create standardized census questionnaires, it has been unable to standardize two key measures: What levels of spatial continuity and population density constitute a well-defined, singular “settlement,” as against a collection of disparate settlements or individual farms & What is the urban population threshold (UTP) that distinguishes an “urban” from a “non-urban” or “rural” settlement. Read more at:
-            <a href="https://marroninstitute.nyu.edu/uploads/content/Angel_et_al_Our_Not-So-Urban_World,_revised_on_22_Aug_2018_v2.pdf">The Marron Institute</a></p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Services -->
-  <!-- services=urban (global definitions) -->
+  <!-- services=global definitions -->
   <section class="content-section bg-primary text-white text-center" id="services">
     <div class="container">
       <div class="content-section-heading">
-
+        <h3 class="text-secondary mb-0">Urban</h3>
         <h2 >Global Definitions</h2>
       </div>
       <p> Click on Country</p>
@@ -136,17 +122,33 @@
     </div>
   </section>
 
-  <!-- Callout -->
-  <section class="callout">
+  <!-- About I changed the order and put about after services for better visualization-->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>The Urban/Rural divide is used to track demographic changes, economic growth, and resource distribution.</h2>
+          <p class="lead mb-5">Although the UN has tried to create standardized census questionnaires, it has been unable to standardize two key measures: What levels of spatial continuity and population density constitute a well-defined, singular “settlement,” as against a collection of disparate settlements or individual farms & What is the urban population threshold (UTP) that distinguishes an “urban” from a “non-urban” or “rural” settlement. Read more at:
+            <a href="https://marroninstitute.nyu.edu/uploads/content/Angel_et_al_Our_Not-So-Urban_World,_revised_on_22_Aug_2018_v2.pdf">The Marron Institute</a></p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Callout I took out call out for now. if i permenetly decide to, please delete this section -->
+  <!-- <section class="callout">
     <div class="container text-center">
       <h2 class="mx-auto mb-5">Welcome to
         <em>your</em>
         next website!</h2>
       <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
     </div>
-  </section>
+  </section> -->
 
-  <!-- Portfolio -->
+  <!-- Portfolio that i will make into pictures of different type of urban settlements -->
   <section class="content-section" id="portfolio">
     <div class="container">
       <div class="content-section-heading text-center">
@@ -202,15 +204,6 @@
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="content-section bg-primary text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-      <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-      <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
-    </div>
-  </section>
-
   <!-- Map -->
   <section id="contact" class="map">
     <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
@@ -220,8 +213,18 @@
     </small>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer text-center">
+    <!-- Call to Action I changed this to put it below the map -->
+    <section class="content-section bg-primary text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">To learn more click...</h2>
+        <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
+
+        <button onclick="window.location.href = 'https://gis-portal.data.census.gov/arcgis/apps/MapSeries/index.html?appid=7a41374f6b03456e9d138cb014711e01';">What is rural?</button>
+      </div>
+    </section>
+
+  <!-- Footer Right now I dont want a footer. If I decide against it take it out!-->
+  <!-- <footer class="footer text-center">
     <div class="container">
       <ul class="list-inline mb-5">
         <li class="list-inline-item">
@@ -242,14 +245,14 @@
       </ul>
       <p class="text-muted small mb-0">Copyright &copy; Your Website 2019</p>
     </div>
-  </footer>
+  </footer> -->
 
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
 
-  <!-- India Modal -->
+  <!-- India Modal (For all the modals below I got my code from https://getbootstrap.com/docs/4.0/components/modal/ )-->
   <div class="modal fade" id="indiaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
