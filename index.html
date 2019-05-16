@@ -57,7 +57,7 @@
     <div class="container text-center my-auto">
       <h1 class="mb-1">What is Urban?</h1>
       <h3 class="mb-5">
-        <em>Global Definitions and its Consequences</em>
+        <em>Global Definitions and Consequences</em>
       </h3>
       <!--<a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a> -->
     </div>
@@ -190,12 +190,42 @@
 
   <!-- Map -->
   <section id="contact" class="map">
+    <div id="mapContainer">
+      <div id="sidebar">
+        <div class="info-box">
+          <h3>Queensboro Hill Land Use Map</h3>
+          <span id="address">Move the mouse over a lot for address and land use info</span><br/>
+          <span id="landuse"></span>
+        </div>
+        <div class="info-box">
+          <h3>Fly to Neighborhood</h3>
+          <!-- These buttons use data attributes, which we can easily pull using jquery -->
+          <button class="flyto" data-neighborhood="park-slope">Park Slope</button>
+          <button class="flyto" data-neighborhood="morningside-heights">Morningside Heights</button>
+          <button class="flyto" data-neighborhood="fidi">FiDi</button>
+          <hr/>
+          <button class="flyto" data-neighborhood="greenpoint">Back to Greenpoint</button>
+        </div>
+        <div class="info-box legend">
+          <h3>Legend</h3>
+          <!-- We'll programmatically make the legend here -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- below is the good code for the google map
+  <section id="contact" class="map">
     <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
     <br />
     <small>
       <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
     </small>
   </section>
+  -->
+
 
   <!-- About I changed the order and put about after services for better visualization
   ACTUALLY, after im done with the map, I want to put the "consequence" of diff definitions here.
@@ -344,6 +374,15 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/stylish-portfolio.min.js"></script>
+
+  <!-- Scripts for Mapbox-GL -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
 
 </body>
 

@@ -45,76 +45,6 @@ h6 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Map */
-.map {
-  height: 30rem;
-}
-
-@media (max-width: 992px) {
-  .map {
-    height: 75%;
-  }
-}
-
-.map iframe {
-  pointer-events: none;
-}
-
-.scroll-to-top {
-  position: fixed;
-  right: 15px;
-  bottom: 15px;
-  display: none;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  color: white;
-  background: rgba(52, 58, 64, 0.5);
-  line-height: 45px;
-}
-
-.scroll-to-top:focus, .scroll-to-top:hover {
-  color: white;
-}
-
-.scroll-to-top:hover {
-  background: #343a40;
-}
-
-.scroll-to-top i {
-  font-weight: 800;
-}
-
-.masthead {
-  min-height: 30rem;
-  position: relative;
-  display: table;
-  width: 100%;
-  height: auto;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/header-image.jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/header-image.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.masthead h1 {
-  font-size: 4rem;
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width: 992px) {
-  .masthead {
-    height: 100vh;
-  }
-  .masthead h1 {
-    font-size: 5.5rem;
-  }
-}
-
 /* Side Menu */
 #sidebar-wrapper {
   position: fixed;
@@ -374,4 +304,52 @@ a:hover, a:focus, a:active {
 
 .text-secondary {
   color: #ecb807 !important;
+}
+
+/* Map */
+
+#mapContainer {
+  height: 100%;
+  width: 100%;
+  background: lightgray;
+  margin: 0 auto;
+}
+
+#sidebar {
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 15px;
+}
+
+.info-box {
+  top: 25px;
+  left: 25px;
+  z-index: 10;
+  background-color: #c3c3c3;
+  padding: 15px;
+  border-radius: 11px;
+  box-shadow: 1px 1px 7px #525252;
+  margin-bottom:15px
+}
+
+h3 {
+  margin: 0 0 15px 0;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.legend-color-box {
+  height: 15px;
+  width: 15px;
+  float: left;
+  margin-right: 10px;
 }
